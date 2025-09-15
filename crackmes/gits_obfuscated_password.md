@@ -92,11 +92,11 @@ So local_b8 is an array of some integer type because i learnd a hex literal with
 After converting the hex bytes `73 78 57 59 30 39 47 56` into ASCII, I got: `sxWY09GV`.
 
 Since I am on an x86/x64 architecture, the byte representation is little-endian, so I had to reverse the output: `VG90YWxs`.   
-At first, I suspected this was some kind of encrypted word. After a bit of research, I found out that it was Base64-encoded. After decoding it, I got the word: `Totaly`.  
+At first, I suspected this was some kind of encrypted word. After a bit of research, I found out that it was Base64-encoded. After decoding it, I got the word: `Totally`.  
 So i decoded all of the values with a simple bash command: `echo "VG90YWxseU5vdFRoZVBhc3N3b3Jk" | base64 -d`  
 And the result was: `TotallyNotThePassword`.  
   
 I quickly realized that this was the same string I had found in my very first string scan with the String utility.  
-So this challange could have been solved with a basic string search and a simple bas64 decoding
+So this challenge could have been solved with a basic string search and a simple bas64 decoding
 
 I ran the programm in my Win VM, typed in the password and got the message: "Login successful!".
