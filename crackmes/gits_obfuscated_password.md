@@ -8,7 +8,7 @@
 
 ---
 
-### Step 1: Basic string seach  
+### Step 1: Basic string search  
 The first thing i did after i downloaded the binary to my vm was a basic string search: `strings crackme.exe`  
 
 **Output:**
